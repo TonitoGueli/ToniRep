@@ -1,5 +1,5 @@
 [
-   {
+   "products":{
       "id": 1,
       "name": "ProductName",
       "updated_at": 150000000,
