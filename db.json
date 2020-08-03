@@ -1,4 +1,3 @@
-[
   {
     "id": 1, 
     "name": "ProductName",
@@ -6,10 +5,4 @@
     "price": 100,
     "manufacturer": "ManufacturerCompanyName" 
   },
-  {
-    "id": 3, 
-    "name": "ProductName 2",
-    "updated_at": 150000230, 
-    "price": 90
-  }
-] 
+
