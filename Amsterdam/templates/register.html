@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido a Amsterdam</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/styles/registerjs.js"></script>
+<link rel="stylesheet" type="text/css" href="static/styles/registerstyles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</head>
+<body>
+<form id="msform" method="post">
+  <fieldset>
+    <h2 class="fs-title">¡Ingresa a Ámsterdam!</h2>
+    <input required type="text" name="loginName" placeholder="Nombre para mostrar" />
+    <input required type="text" name="email" placeholder="Email" />
+    <input required type="password" id="pass" name="pass" placeholder="Contraseña" minlength="8" />
+    <input required type="password" id="cpass" name="cpass" placeholder="Confirmación de contraseña" minlength="8" />
+    <span id='message'></span>
+    <h3 class="fs-subtitle">Indícanos tus preferencias</h3>
+    <label class="container">Finanzas
+  <input name="pref1" type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Cocina
+  <input name="pref2" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Tecnología
+  <input name="pref3" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+    <h3 class="fs-subtitle">Nunca compartiremos tu información</h3>
+    <input type="text" name="fname" placeholder="Nombre" />
+    <input type="text" name="lname" placeholder="Apellido" />
+    <input type="date" name="dbirth" placeholder="01-01-1990" />
+    <input type="button" name="previous" class="previous action-button" onclick="goBack()" value="Atrás" />
+    <input type="submit" name="submit" class="submit action-button" value="¡Enviar!" />
+  </fieldset>
+<script>
+$('#pass, #cpass').on('keyup', function () {
+if ($('#pass').val() == $('#cpass').val()) {
+$('#message').html('¡Las contraseñas coinciden!').css('color', 'green');} else
+$('#message').html('¡Las contraseñas no coinciden!').css('color', 'red');
+});
+</script>
+</form>
+</body>
+</html>

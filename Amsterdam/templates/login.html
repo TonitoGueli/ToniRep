@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido a Amsterdam</title>
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='styles/loginstyles.css' ) }}">
+</head>
+<body id="bodyStyle">
+	<div class="loginbox">
+		<img src="static\img\amsterdam_background_login_icon_01.png"
+			class="avatar">
+		<h2>Accede a tu cuenta</h2>
+		<form action="" method="POST">
+			<P>Nombre de usuario</P>
+			<input type="text" name="email_usuario_form" placeholder="Ingrese correo electrónico">
+			<p>Contraseña</p>
+			<input type="password" name="password_usuario_form" placeholder="************">
+			<input id="btnLogin" type="submit" name="btnLogin_usuario_form" value="Ingresar - Regístrate"><br>
+		</form>
+			<table class="social-icons">
+		<tr>
+			<td><a href="https://www.twitter.com"><img
+					src="static/img/amsterdam_index_twitter_icon_01.png"></a></td>
+			<td><a href="https://www.instagram.com"><img
+					src="static/img/amsterdam_index_instagram_icon_01.png"></a></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

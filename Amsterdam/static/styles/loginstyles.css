@@ -1,0 +1,105 @@
+#bodyStyle {
+	margin: 0px;
+	padding: 0px;
+	background: url(amsterdam_background_login_01.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	background-attachment: fixed;
+	background-color: #464646;
+}
+
+.loginbox {
+	width: 320px;
+	height: 420px;
+	background: #cf9e2d;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box_sizing: border-box;
+	padding: 120px 70px;
+}
+
+.avatar {
+	width: 200px;
+	height: 200px;
+	border_radius: 50%;
+	position: absolute;
+	top: -70px;
+	left: calc(35% - 35px);
+}
+
+h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 32px;
+}
+
+.loginbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000000;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #0a7ebd;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor: pointer;
+	background: #81c2db;
+	color: #000;
+}
+
+.loginbox a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	font-size: 16px;
+}
+
+.loginbox a:hover {
+	color: #0a7ebd;
+}
+
+.social-icons {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+}
+
+#btnLogin{
+	border: none;
+	position:absolute;
+	left:23%;
+	top: 410px;
+	border-radius: 12px;
+	padding: 14px 40px;
+	width: 260px;
+}
